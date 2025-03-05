@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav .logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo {
+    max-width: 5rem;
+    height: auto;
+}
+
+.nav .menu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.menu a {
+    padding: 2%;
+    border: solid white;
+    border-radius: 12px;
+}
+
+.menu a:hover {
+    background-color: rgb(81, 19, 139);
+    border-radius: 12px;
+    border: solid black;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        position: static;
+    }
+
+    .nav .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
