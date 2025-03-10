@@ -109,6 +109,10 @@ body {
     .infor h1 {
         font-size: 1.5em;
     }
+
+    .filler {
+        display: none;
+    }
 }
 
 .menu a {
@@ -157,7 +161,7 @@ body {
 }
 
 .infor {
-    margin: 0 3rem 0 5rem;
+    margin: 0 3rem 5rem 5rem;
     font-family: Oswald;
 }
 
@@ -167,4 +171,89 @@ body {
 
 .infor h1 {
     margin-top: 2rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    font-family: Gelasio;
+    text-align: center;
+    padding: 2% 0 2% 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button2 {
+    width: 100px;
+    color: white;
+    background-color: black;
+    border: solid white;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.button2:hover {
+    background-color: rgb(81, 19, 139);
+    border: solid black;
+}
+
+.formcon {
+    background: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formcon h2 {
+    color: #51278b;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #51278b;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #51278b;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
