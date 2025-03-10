@@ -113,6 +113,55 @@ body {
     .filler {
         display: none;
     }
+
+    .about-container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .mainbod {
+        width: 90%;
+        /* Expand text area */
+        margin-left: 0;
+        float: none;
+    }
+
+    .polaroid {
+        max-width: 150px;
+        /* Make image smaller */
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .polaroid img {
+        width: 100%;
+    }
+
+    .polaroid .caption {
+        font-size: 12px;
+    }
+
+    .about-container {
+        margin-left: 1rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .mainbod {
+        width: 65%;
+    }
+
+    .polaroid {
+        width: 30%;
+        max-width: 150px;
+    }
+
+    .polaroid .caption {
+        font-size: 12px;
+    }
+
 }
 
 .menu a {
@@ -256,4 +305,59 @@ button:hover {
     color: #51278b;
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+
+.mainbod {
+    background: repeating-linear-gradient(white 0px, white 30px, #add8e6 31px, #add8e6 32px);
+    background-size: 100% 32px;
+    line-height: 32px;
+    font-size: 22px;
+    font-family: "Sofia", cursive;
+    padding: 50px 40px;
+    border-left: 4px solid red;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    max-width: 50%;
+    display: flex;
+    text-align: justify;
+    float: left;
+}
+
+.mainbod li {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95%;
+    gap: 10%;
+}
+
+.polaroid {
+    background: white;
+    padding: 10px 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    position: relative;
+    float: right;
+}
+
+.polaroid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.polaroid .caption {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
 }
